@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Microsoft Yahei','宋体';
+	font-size: 14px;
+	background: #f1f1f1;
+	color: #666;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+input {
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: #fff;
+}
+table tbody {
+	font-size: 12px;
+}
+.clearfix {
+	content: '';
+	display: block;
+	overflow: hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.white {
+	color: #fff;
+}
+.gray {
+	color: #666;
+}
+.red {
+	color: #fa8564;
+}
+.orange {
+	color: #ef9a36
+}
+.blue {
+	color: #5faee3;
+}
+.green {
+	color: #1fb5ad;
+}
+.cl {
+	color: #aec785;
+}
+.yellow {
+	color: #fba210;
+}
+.qhbg {
+	background: #f6f6f6;
+}
+.shbg {
+	background: #e3e3e3;
+}
+.wbg {
+	background: #fff;
+}
+.gbg {
+	background: #1fb5ad;
+}
+.obg {
+	background: #ef9a36;
+}
+.clbg {
+	background: #aec785;
+}
+.bbg {
+	background: #5faee3;
+}
+.rbg {
+	background: #fa8564;
+}
+.ybg {
+	background : #fba210;
+}
+.teach_kh {
+	margin: 40px;
+	width: 980px;
+}

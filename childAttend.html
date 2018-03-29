@@ -1,0 +1,102 @@
+<DOCTYPE! html>
+    <html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>本校幼儿出勤</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/teach_kh.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    </head>
+
+    <body>
+        <div class="teach_kh">
+            <div class="clearfix">
+                <div class="tkh_intro">
+                    <h2>本校幼儿出勤</h2>
+                    <p>SCHOOL ATTENDANCE</p>
+
+                    <div class="tkh_introList tkh_bonusList" style="width: 646px;">
+                        <h3 class="gary bonus_title">兰州北大附属实验学校幼儿园(默认为当月数据)
+                            <span class="right">编辑</span>
+                        </h3>
+                        <div class="intro_cont">
+                            <table cellspacing="0" id="chuqinbianji">
+                                <input name="name" id="sid" disabled value="24" type="hidden">
+                                
+                                <thead align="center">
+                                    <tr style="height:40px;">
+                                        <td class="qhbg red" style="width:200px;">班级名称</td>
+                                        <td class="rbg white" style="width:200px;">班级幼儿人数</td>
+                                        <td class="rbg white" style="width:200px;">班级幼儿出勤率</td>
+                                    </tr>
+                                </thead>
+                                <tbody align="center">
+                                    <tr>
+                                        <td class="qhbg">红宝石</td>
+                                        <td>23</td>
+                                        <td class="qhbg">
+                                            <input class="qhbg i3" type="text" name="name" disabled value="" onblur="rank(169,this.value)"> % </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shbg">蓝宝石</td>
+                                        <td class="qhbg">22</td>
+                                        <td class="shbg">
+                                            <input class="shbg i3" type="text" name="name" disabled value="" onblur="rank(170,this.value)"> % </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="qhbg">石榴石</td>
+                                        <td>19</td>
+                                        <td class="qhbg">
+                                            <input class="qhbg i3" type="text" name="name" disabled value="95" onblur="rank(188,this.value)"> % </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shbg">水晶石</td>
+                                        <td class="qhbg">12</td>
+                                        <td class="shbg">
+                                            <input class="shbg i3" type="text" name="name" disabled value="" onblur="rank(223,this.value)"> % </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('#bianji').click(function(){
+                var publish = $("#bianji").text();
+                $("#bianji").text("确定");
+                if(publish=='编辑'){
+                    $("#chuqinbianji").find("input[type=text]").each(function(){
+                        $(this).attr("disabled",false);             
+                    }); 
+                }else{
+                    $("#bianji").text("编辑");
+                    $("#chuqinbianji").find("input[type=text]").each(function(){
+                        $(this).attr("disabled","disabled"); 
+                        $(this).attr('style','border:1px solid rgb(190, 189, 189)');
+                    });
+                }
+            })
+
+            function rank(t,v){
+                var num = /^\d+(\.\d+)?$/;
+                if(!num.test(v)){
+                    alert("请输入数字");
+                    return ;
+                }else{
+                    var sid= $("#sid").val();
+                    $.post('document.url',{'type':t,'value':v,'school_id':sid});
+                }
+            }
+
+        </script>
+
+    </body>
+    </html>

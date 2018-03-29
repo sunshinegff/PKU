@@ -1,0 +1,174 @@
+
+/* title */
+.tkh_title dl {
+	width: 230px;
+	height: 192px;
+	margin: 4px 36px 26px 0;
+	text-align: center;
+}
+.tkh_title dl dt {
+	margin: 30px 0;
+}
+.tkh_title dl dd p {
+	line-height: 30px;
+}
+.tkh_title dl dd p.zl {
+	font-size: 20px;
+}
+/* tkh_intro */
+.tkh_intro h2 {
+	font-size: 28px;
+	color: #444;
+}
+.tkh_introList {
+	margin-top: 27px;
+	border: 1px solid #ccc;
+	background: #fbfbfb;
+}
+.tkh_introList h3 {
+	padding-left: 22px;
+	height: 52px;
+	line-height: 52px;
+	font-weight: bold;
+	border-bottom: 1px solid #e8e8e8;
+}
+.intro_cont {
+	padding: 15px 22px;
+}
+.tkh_introList p {
+	line-height: 30px;
+}
+/* tkh_bonus */
+.tkh_bonus {
+	margin-top: 30px;
+}
+.tkh_bonus h2 {
+	font-size: 28px;
+	color: #444;
+}
+.tkh_bonus h2 span.span2 {
+	font-size: 14px;
+}
+.tkh_bonus_l {
+	width: 420px;
+	margin-right: 15px;
+}
+.tkh_bonus_l img {
+	margin: 20px 0;
+}
+.tkh_bonusList h3 {
+	padding-left: 10px;
+}
+.tkh_bonusList h3 span.bonus_title {
+	font-size: 20px;
+	font-weight: 600;
+}
+.tkh_bonusList h3 span.span2 {
+	font-size: 12px;
+}
+.tkh_bonus_r {
+	width: 540px;
+}
+.intro_cont p.p2 {
+	text-indent: 2em;
+}
+.intro_cont p.p3 {
+	text-indent: 4em;
+}
+
+/* 教师奖金相关数值 */
+.tkh_title dl.t_bonus2 {
+	background: #fa8564;
+}
+.tkh_intro .intro_cont table tr {
+	height: 30px;
+}
+.tkh_intro .intro_cont table tr td {
+	height: 30px;
+}
+.tkh_intro .intro_cont table tr td.td1 {
+	height: 30px;
+	padding: 0 12px;
+}
+.tkh_intro .intro_cont table td input {
+	height: 30px;
+	padding: 0 5px;
+	text-align: center;
+}
+.tkh_intro .intro_cont table tr td.td2 {
+	height: 30px;
+	padding: 0 56px;
+}
+.tkh_intro .intro_cont table td input.i2 {
+	height: 30px;
+	padding: 0 40px;
+	text-align: center;
+}
+.tkh_intro .intro_cont table td input.i3 {
+	width: 50px;
+	height: 30px;
+	text-align: right;
+}
+.table3 td {
+	padding: 0 30px;
+}
+.table4 td {
+	padding: 0 60px;
+	width: 100px;
+}
+.table5 td {
+	padding: 0 60px;
+	width: 124px;
+}
+.tkh_bonusList h3 span {
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 20px;
+}
+.tkh_intro .intro_cont table.table6 td select{
+	width: 336px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #999;
+}
+.tkh_intro .intro_cont table.table6 td select option {
+	color: #333;
+}
+#do {
+	width: 162px;
+	height: 42px;
+	line-height: 42px;
+	background: #1fbba6;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+}
+#result {
+	width: 160px;
+	height: 40px;
+	line-height: 42px;
+	background: #fff;
+	color: #666;
+	text-align: center;
+	border: 1px solid #666;
+	border-radius: 5px;
+}
+.tkh_intro .intro_cont table.table6 td input {
+	font-size: 16px;
+	cursor: pointer;
+}
+/* 行政后勤绩效 */
+.tkh_title dl.t_al dd p {
+	line-height: 20px;
+}
+/* 行政后勤奖金相关参数 */
+
+
+/* 招生主任绩效 */
+.tkh_title dl.t_al dd p {
+	line-height: 30px;
+}

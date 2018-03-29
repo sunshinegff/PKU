@@ -1,0 +1,397 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>加盟园教师绩效--教师奖金相关数值</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/teach_kh.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="teach_kh">
+		<div class="tkh_title clearfix">
+			<dl class="t_bonus rbg left">
+				<dt aligh="center">
+					<img src="img/t7.png">
+				</dt>
+				<dd>
+					<p class="white zl">教师奖金相关数值</p>
+					<p class="white">Relative Value Of Teacher's Bonus</p>
+				</dd>
+			</dl>
+		</div>
+
+		<div class="clearfix">
+			<div class="tkh_intro tkh_bonus_l left">
+				<h2>教师等级/奖金分配</h2>
+				<p>DISTRIBUTION OF TEACHERS' GRADES</p>
+
+				<div>
+					<div class="tkh_introList tkh_bonusList">
+						<h3 class="green bonus_title">教师等级/奖金分配 <span class="right">编辑</span></h3>
+						<div class="intro_cont">
+							<table cellspacing="0" id="jiangjin">
+								<thead align="center">
+									<tr>
+										<td class="qhbg td1" rowspan="2">岗位</td>
+										<td class="gbg white" style="height: 40px;" colspan="3">个人奖金</td>
+									</tr>
+									<tr style="height: 40px;">
+										<td>A级</td>
+										<td>B级</td>
+										<td>C级</td>
+									</tr>
+								</thead>
+								<tbody align="center">
+									<tr>
+										<td class="shbg td1">主教</td>
+										<td><input class="qhbg" name="name" disabled value="400"  size="8"  type="text" onblur="rank(1,'a',this.value)" ></td>
+										<td><input class="shbg" name="name" disabled value="200"  size="8"  type="text" onblur="rank(1,'b',this.value)" ></td>
+										<td><input class="qhbg" name="name" disabled value="0"  size="8"  type="text" onblur="rank(1,'c',this.value)" ></td>
+									</tr>
+									<tr>
+										<td class="qhbg td1">助教</td>
+										<td><input name="name" disabled value="200"  size="8"  type="text" onblur="rank(2,'a',this.value)"></td>
+										<td><input class="qhbg" name="name" disabled value="100"  size="8"  type="text" onblur="rank(2,'b',this.value)"></td>
+										<td><input name="name" disabled value="0"  size="8"  type="text" onblur="rank(2,'c',this.value)"></td>
+									</tr>
+									<tr>
+										<td class="shbg td1">班级助理</td>
+										<td><input class="qhbg" name="name" disabled value="100"  size="8"  type="text" onblur="rank(3,'a',this.value)"></td>
+										<td><input class="shbg" name="name" disabled value="50"  size="8"  type="text" onblur="rank(3,'b',this.value)"></td>
+										<td><input class="qhbg" name="name" disabled value="0"  size="8"  type="text" onblur="rank(3,'c',this.value)"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tkh_intro tkh_bonus_r left">
+				<h2>奖金基数分配</h2>
+				<p>DISTRIBUTION OF BONUS BASE</p>
+				
+				<div>
+					<div class="tkh_introList tkh_bonusList">
+						<h3 class="orange">奖金基数分配 <span class="right">编辑</span></h3>
+						<div class="intro_cont" style="margin-bottom: 40px;">
+							<table cellspacing="0" id="jishu">
+								<input name="name"  id="sid" disabled value="1"   type="hidden" >  
+								<thead align="center">
+									<tr style="height: 40px;">
+										<td class="qhbg orange">班级类型</td>
+										<td class="obg white">班级学费</td>
+										<td class="obg white">奖金基数</td>
+									</tr>
+								</thead>
+								<tbody align="center">
+									<tr>
+										<td class="qhbg td2">国际班</td>
+										<td><input class="i2" name="name" disabled value="5800"  size="8"  type="text" onblur="base(1,'banji',this.value)" ></td>
+										<td><input class="qhbg i2" name="name" disabled value="96"  size="8"  type="text" onblur="base(1,'jishu',this.value)" ></td>
+									</tr>
+									<tr>
+										<td class="shbg td2">中华班</td>
+										<td><input class="qhbg i2" name="name" disabled value="4200"  size="8"  type="text" onblur="base(2,'banji',this.value)" ></td>
+										<td><input class="shbg i2" name="name" disabled value="84"  size="8"  type="text" onblur="base(2,'jishu',this.value)" ></td>
+									</tr>
+									<tr>
+										<td class="qhbg td2">国学班</td>
+										<td><input class="i2" name="name" disabled value="3900"  size="8"  type="text" onblur="base(3,'banji',this.value)" ></td>
+										<td><input class="qhbg i2" name="name" disabled value="66"  size="8"  type="text" onblur="base(3,'jishu',this.value)" ></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tkh_intro clearfix" style="margin-top: 30px;">
+			<h2>奖金分配比例</h2>
+			<p>PERCENTAGE DISTRIBUTION OF BONUSES</p>
+
+			<div>
+				<div class="tkh_introList tkh_bonusList">
+					<h3 class="cl bonus_title">奖金分配比例 <span class="right">编辑</span></h3>
+					<div class="intro_cont">
+						<table class="table3" cellspacing="0" id="fenpei">
+							<thead align="center">
+								<tr style="height: 40px;">
+									<td class="td1 cl qhbg">岗位/国际班</td>
+									<td class="clbg white">国际(半天)</td>
+									<td class="clbg white">国际(全天)</td>
+									<td></td>
+									<td class="td1 cl qhbg">岗位/中华国学班</td>
+									<td class="clbg white">中大</td>
+									<td class="clbg white">托小</td>
+								</tr>
+							</thead>
+							<tbody align="center">
+								<tr>
+									<td class="qhbg">主教</td>
+									<td><input class="i3" name="name" disabled value="38.5"  size="8"  type="text" onblur="bili(1,1,'bantianzhongda',this.value)" > %</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="0"  size="8"  type="text" onblur="bili(1,1,'quantiantuoxiao',this.value)" > %</td>
+									<td></td>
+									<td>主教</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="50"  size="8"  type="text" onblur="bili(2,5,'bantianzhongda',this.value)" > %</td>
+									<td><input class="i3" name="name" disabled value="40"  size="8"  type="text" onblur="bili(2,5,'quantiantuoxiao',this.value)" > %</td>
+								</tr>
+								<tr>
+									<td class="shbg">助教</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="23"  size="8"  type="text" onblur="bili(1,2,'bantianzhongda',this.value)" > %</td>
+									<td class="shbg"><input class="i3 shbg" name="name" disabled value="37.5"  size="8"  type="text" onblur="bili(1,2,'quantiantuoxiao',this.value)" > %</td>
+									<td></td>
+									<td class="qhbg">助教</td>
+									<td class="shbg"><input class="i3 shbg" name="name" disabled value="30"  size="8"  type="text" onblur="bili(2,6,'bantianzhongda',this.value)" > %</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="25"  size="8"  type="text" onblur="bili(2,6,'quantiantuoxiao',this.value)" > %</td>
+								</tr>
+								<tr>
+									<td class="qhbg">英文助教</td>
+									<td><input class="i3" name="name" disabled value="23"  size="8"  type="text" onblur="bili(1,3,'bantianzhongda',this.value)" > %</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="37.5"  size="8"  type="text" onblur="bili(1,3,'quantiantuoxiao',this.value)" > %</td>
+									<td></td>
+									<td>班级助理</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="20"  size="8"  type="text" onblur="bili(2,7,'bantianzhongda',this.value)" > %</td>
+									<td><input class="i3" name="name" disabled value="17.5"  size="8"  type="text" onblur="bili(2,7,'quantiantuoxiao',this.value)" > %</td>
+								</tr>
+								<tr>
+									<td class="shbg">班级助理</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="15.5"  size="8"  type="text" onblur="bili(1,4,'bantianzhongda',this.value)" > %</td>
+									<td class="shbg"><input class="i3 shbg" name="name" disabled value="25"  size="8"  type="text" onblur="bili(1,4,'quantiantuoxiao',this.value)" > %</td>
+									<td></td>
+									<td class="qhbg">班级助理</td>
+									<td class="shbg"><input class="i3 shbg" name="name" disabled value=""  size="8"  type="text" onblur="bili(2,8,'bantianzhongda',this.value)" > %</td>
+									<td class="qhbg"><input class="i3 qhbg" name="name" disabled value="17.5"  size="8"  type="text" onblur="bili(2,8,'quantiantuoxiao',this.value)" > %</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix" style="margin-top: 30px;">
+			<div class="tkh_intro tkh_bonus_l left">
+				<h2>班级评级系数</h2>
+				<p>CLASS RATING FACTOR</p>
+
+				<div>
+					<div class="tkh_introList tkh_bonusList">
+						<h3 class="blue bonus_title">班级评级系数 <span class="right">编辑</span></h3>
+						<div class="intro_cont">
+							<table class="table4" cellspacing="0" style="margin-bottom: 30px;">
+								<thead align="center">
+									<tr style="height: 40px;">
+										<td class="bbg white">级别</td>
+										<td class="bbg white">系数</td>
+									</tr>
+								</thead>
+								<tbody align="center">
+									<tr>
+										<td class="shbg">A级</td>
+										<td class="qhbg">1.2</td>
+									</tr>
+									<tr>
+										<td class="qhbg">B级</td>
+										<td>1.0</td>
+									</tr>
+									<tr>
+										<td class="shbg">C级</td>
+										<td class="qhbg">0.8</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tkh_intro tkh_bonus_r left">
+				<h2>班级奖金基数</h2>
+				<p>CLASS BONUS BASE</p>
+				
+				<div>
+					<div class="tkh_introList tkh_bonusList">
+						<h3 class="orange">奖金基数分配 <span class="right">编辑</span></h3>
+						<div class="intro_cont">
+							<table cellspacing="0" class="table5">
+								<thead align="center">
+									<tr style="height: 40px;">
+										<td class="obg white">班级类型</td>
+										<td class="obg white">基数</td>
+									</tr>
+								</thead>
+								<tbody align="center">
+									<tr>
+										<td class="shbg">托班</td>
+										<td class="qhbg">1.35</td>
+									</tr>
+									<tr>
+										<td class="qhbg">小班</td>
+										<td>1.35</td>
+									</tr>
+									<tr>
+										<td class="shbg">中班</td>
+										<td class="qhbg">1</td>
+									</tr>
+									<tr>
+										<td class="qhbg">大班</td>
+										<td>1</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tkh_intro" style="margin-top: 30px;">
+			<div>
+				<div class="tkh_introList tkh_bonusList">
+					<h3 class="bonus_title">教师奖金计算器</h3>
+					<div class="intro_cont">
+						<table class="table6">
+							<tbody>
+								<tr>
+									<td colspan="2"><select>
+										<option value="0">请选择教师职务</option>
+										<option value="1">主班</option>
+										<option value="2">助教</option>
+										<option value="3">班级助理</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td colspan="2"><select>
+										<option value="0">请选择教师考核评分等级</option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+										<option value="3">C</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td colspan="2"><select>
+										<option value="0">请选择教师所在班级类型</option>
+										<option value="1">国际班</option>
+										<option value="2">中华班</option>
+										<option value="3">国学班</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td colspan="2"><select>
+										<option value="0">教师若在国际班，请选择工作模式</option>
+										<option value="1">全天</option>
+										<option value="2">半天</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td colspan="2"><select>
+										<option value="0">请选择教师所在班级评级</option>
+										<option value="1">A</option>
+										<option value="2">B</option>
+										<option value="3">C</option>
+									</select></td>
+								</tr>
+								<tr>
+									<td><input id="do" value="点击计算" type="button"></td>
+									<td id="result">最终奖金</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('#bianji').click(function(){
+			var publish = $("#bianji").text();
+			$("#bianji").text("确定");
+			if(publish=='编辑'){
+				$("#jiangjin").find("input[type=text]").each(function(){
+					$(this).attr("disabled",false); 			
+				});	
+			}else{
+				$("#bianji").text("编辑");
+				$("#jiangjin").find("input[type=text]").each(function(){
+					$(this).attr("disabled","disabled"); 
+					$(this).attr('style','border:1px solid rgb(190, 189, 189)');
+				});
+			}
+		})
+		function rank(t,s,v){
+			var num = /^\d+(\.\d+)?$/;
+			if(!num.test(v)){
+				alert("请输入数字");
+				return ;
+			}else{
+				var sid= $("#sid").val();
+				$.post('document.url',{'type':t,'sort':s,'value':v,'school_id':sid});
+			}
+		}
+
+		$('#jishubianji').click(function(){
+			var publish = $("#jishubianji").text();
+			$("#jishubianji").text("确定");
+			if(publish=='编辑'){
+				$("#jishu").find("input[type=text]").each(function(){
+					$(this).attr("disabled",false); 			
+				});	
+			}else{
+				$("#jishubianji").text("编辑");
+				$("#jishu").find("input[type=text]").each(function(){
+					$(this).attr("disabled","disabled"); 
+					$(this).attr('style','border:1px solid rgb(190, 189, 189)');
+				});
+			}
+		})
+		function base(t,s,v){
+			var num = /^\d+(\.\d+)?$/;
+			if(!num.test(v)){
+				alert("请输入数字");
+				return ;
+			}else{
+				var sid= $("#sid").val();
+				$.post('/tool/tool/teacher_jishu/',{'type':t,'sort':s,'value':v,'school_id':sid});
+			}	
+		}
+		$('#fenpeibianji').click(function(){
+			var publish = $("#fenpeibianji").text();
+			$("#fenpeibianji").text("确定");
+			if(publish=='编辑'){
+				$("#fenpei").find("input[type=text]").each(function(){
+					$(this).attr("disabled",false); 			
+				});	
+			}else{
+				$("#fenpeibianji").text("编辑");
+				$("#fenpei").find("input[type=text]").each(function(){
+					$(this).attr("disabled","disabled"); 
+					$(this).attr('style','border:1px solid rgb(190, 189, 189)');
+				});
+			}
+		})
+		function bili(g,t,z,v){
+			var num = /^\d+(\.\d+)?$/;
+			if(!num.test(v)){
+				alert("请输入数字");
+				return ;
+			}else{
+				var sid= $("#sid").val();
+				$.post('/tool/tool/teacher_fenpei/',{'gangwei':g,'teacher_type':t,'sort':z,'value':v,'school_id':sid});
+			}		
+		}
+
+		$('#do').click(function(){
+			
+			$("#result").text('我是结果');
+		})
+	</script>
+</body>
+</html>
